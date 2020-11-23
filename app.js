@@ -30,11 +30,13 @@ app.post('/', function(req, res) {
     if (chosen == answer) {
 
         res.write("<h1 style=color:green;> CORRECT ANSWER </h1>");
+        res.write("<h1> ANSWER CHOSEN:</h1>" + chosen);
         res.write("<h1>THE CORRECT ANSWER: Structured Query Language </h1>");
 
 
     } else {
         res.write("<h1 style =color:red; > WRONG ANSWER </h1>");
+        res.write("<h1> ANSWER CHOSEN:</h1>" + chosen);
         res.write("<h1>THE CORRECT ANSWER: Structured Query Language </h1>");
 
 
@@ -42,6 +44,7 @@ app.post('/', function(req, res) {
 
 
 });
+
 
 
 app.listen(process.env.PORT || 3000, function() {
