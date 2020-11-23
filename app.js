@@ -24,7 +24,7 @@ app.post('/', function(req, res) {
 
 
 
-    const answer = "HyperText Markup Language";
+    const answer = "Structured Query Language";
     const chosen = req.body.q;
 
     if (chosen == answer) {
